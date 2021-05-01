@@ -372,17 +372,33 @@ p{
 .course-item{
     width: calc(25% - 30px);
     margin:0 15px 30px;
-    background-color: var(--dark-700);
 }
-course-img{
+.course-img{
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
 }
-course-img img{
+.course-item:hover .course-img{
+    transform: scale(0.9);
+    box-shadow: var(--Shadow);
+}
+.course-img img{
     width: 100%;
 }
+.course-img .course-price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--dark-800);
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
 .course-info{
-    padding: 15px 5px;
+    padding: 15px 0;
 }
 .course-info ul{
     display: flex;
@@ -390,6 +406,8 @@ course-img img{
 }
 .course-info ul li{
     color: var(--white-800);
+    text-transform: capitalize;
+    font-size: 14px;
 }
 .course-info ul li .fa-star{
     color: var(--color-1);
@@ -400,4 +418,53 @@ course-img img{
     text-transform: capitalize;
     color: var(--white-900);
     margin: 10px 0 0;
+}
+
+/*fun fact section starts */
+
+.fun-facts-section{
+    background-color: var(--dark-800);
+}
+.fun-facts-img img{
+    display: flex;
+    justify-content: center;
+}
+.fun-facts-img img{
+    max-width: 420px;
+    width: 100%;
+    animation: zoomOutIn01 7s linear infinite;
+}
+.fun-facts-img,
+.fun-facts-items{
+    width: 50%;
+}
+.fun-fact-item{
+    background-color: var(--dark-700);
+    width: calc(50% - 30px);
+    margin:0 15px 30px;
+    padding:30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.fun-fact-item:nth-child(1){
+    background-color: var(--color-1);
+}
+.fun-fact-item:nth-child(2){
+    background-color: var(--color-2);
+}
+.fun-fact-item:nth-child(3){
+    background-color: var(--main-color);
+}
+.fun-fact-item:nth-child(4){
+    background-color: var(--dark-700);
+}
+.fun-fact-item h3{
+    font-size: 35px;
+    color:var(--white-900);
+    text-transform: capitalize;
+    margin:0 0 5px;
+}
+.fun-facts-item p{
+    text-transform: uppercase;
+    color:var(--white-900);
 }
