@@ -229,7 +229,7 @@ p{
     padding: 0 15px;
 }
 .home-text h1{
-    font-size: 50px;
+    font-size: 40px;
     color:var(--main-color);
     text-transform: uppercase;
     line-height: 1.2;
@@ -280,7 +280,7 @@ p{
 .home-course-item{
     position: absolute;
     height: 80px;
-    width: 80px;
+    width: 90px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -474,5 +474,46 @@ p{
 /* reviews section */
 .reviews-section{
     background-color: var(--dark-800);
+    padding-bottom: 50px;
 }
-.reviews-section
+.review-item{
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.review-item img{
+    max-width: 100%;
+    border:5px solid var(--dark-700);
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+}
+.review-item:hover img{
+    transform: translateX(30px) rotate(30deg);
+}
+.review-item p{
+    font-size: 20px;
+    color: var(--white-900);
+    margin:0 0 15px;
+}
+.review-item p i{
+    font-size: 8px;
+}
+.review-item p .fa-quote-left{
+    margin-left: 10px;
+}
+.review-item p .fa-quote-right{
+    margin-right: 10px;
+}
+.review-item h3{
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 500;
+    margin:0 0 5px;
+    text-transform: capitalize;
+}
+.review-item span{
+    display: block;
+    font-size: 16px;
+    color:var(--white-800);
+}
