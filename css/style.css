@@ -634,7 +634,7 @@ a{
     border-color: var(--main-color);
 }
 .footer-quick-links ul li a{
-    display: flex;
+    display: block;
     padding:8px 0;
     text-transform: capitalize;
     font-size: 16px;
