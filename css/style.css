@@ -260,7 +260,9 @@ p{
     line-height: 1.2;
 }
 .home-text h1 span{
-    color: var(--color-2);
+    background: -webkit-linear-gradient(#ff9F55,#FFD255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
     z-index: 1;
 }
@@ -271,8 +273,8 @@ p{
     width: 100%;
     height: 2px;
     bottom: 15px;
-    background-color: var(--white-900);
-    transform: skewY(-3deg);
+    background-color: #ff9f55;
+    transform: skewY(-2deg);
     z-index: -1;
 }
 .home-text h2{
@@ -731,7 +733,8 @@ a{
         bottom:6px;
     }
     .home-text h2{
-        font-size:18px
+        padding-top: 10px;
+        font-size:16px
     }
     .section-title h2{
         font-size: 30px;
