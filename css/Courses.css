@@ -163,10 +163,10 @@ p{
     border-bottom: 1px solid var(--dark-700);
 }
 .header .logo{
-    padding: 0 15px;
+    padding: 0 10px;
 }
 .header .logo a{
-    font-size: 24px;
+    font-size: 22px;
     color: var(--white-900);
     text-transform: capitalize;
     font-weight: 600;
@@ -245,9 +245,13 @@ p{
 }
 
 /* Home Section */
+.home-section{
+    background-color: var(--dark-800);
+    overflow: hidden;
+}
 
 .container h1{
-    color: var(--dark-800);
+    color: var(--white-800);
     position: relative;
     left: 20px;
     top: 100px;
@@ -333,7 +337,7 @@ p{
     justify-content: space-between;
 }
 .course-info ul li{
-    color: var(--dark-800);
+    color: var(--white-800);
     text-transform: capitalize;
     font-size: 14px;
 }
@@ -344,7 +348,7 @@ p{
     font-size: 20px;
     font-weight: 400;
     text-transform: capitalize;
-    color: var(--dark-800);
+    color: var(--white-800);
     margin: 10px 0 0;
 }
 /* footer */
@@ -471,5 +475,11 @@ p{
         font-size: 16px;
         transition: all 0.5s ease;
         border-radius: 50%;
+    }
+}
+
+@media(max-width:575px){
+    .footer-item{
+        width: 100%;
     }
 }
