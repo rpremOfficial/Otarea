@@ -174,12 +174,11 @@
 }
 .video-details {
     display: relative;
-    background-color: lightblue;
+    background-color: var(--dark-700);
     width: 40em;
     height: 30em;
     border: 1px solid none;
     border-radius: 6px;
-    /* padding: 4%; */
 }
 .details {
     padding: 1% 2%;
