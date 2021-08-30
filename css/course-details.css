@@ -10,6 +10,18 @@
     --Shadow:0 0 15px rgba(0,0,0,0.2);
     scroll-behavior: smooth;
 }
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition:all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+}
 /* header */
 .header{
     background-color: var(--dark-800);
