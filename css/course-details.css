@@ -106,19 +106,21 @@
 /* home*/
 .home{
     background-color: var(--dark-800);
+    position: relative;
     padding: 80px 0;
     width: auto;
     overflow: hidden;
 }
 .home h2{
-    width: 100%;
-    padding: 0 15px;
-    margin-bottom: 60px;
+    margin-left: 10%;
+    padding-left: 20px;
+    margin-bottom: 15px;
     text-align: left;
     text-transform: capitalize;
     font-size: 30px;
-    color:var(--white-900);
-    font-weight: 600;
+    color:var(--white-800);
+    font-weight: 400;
+    justify-content: space-around;
 }
 .home h2 span{
     color:var(--main-color);
@@ -134,7 +136,7 @@
     height: 20em;
     border-radius: 8px;
     border: 1.74px solid var(--main-color);
-    box-shadow: 0 0 10px var(--main-color);
+    box-shadow: 0 0 2px var(--main-color);
     background-color: var(--dark-800);
 }
 .playlist table{
@@ -184,14 +186,27 @@
 .details {
     padding: 1% 2%;
 }
+.details p{
+    font-size: 14px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+.details .See-more{
+    padding-top: 10px;
+    font-size: 14px;
+    color: var(--main-color);
+}
 .details-top {    
+    color: var(--white-800);
     display: flex;
     flex-wrap: nowrap;
 }
 .teacher {
+    font-size: 16px;
     margin-left: 40%;
     margin-right: 10%;
 }
+
 
 /* footer */
 
