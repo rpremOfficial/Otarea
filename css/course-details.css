@@ -126,13 +126,8 @@
 .home h2{
     margin-left: 10%;
     padding-left: 20px;
-    margin-bottom: 15px;
     text-align: left;
     text-transform: capitalize;
-    font-size: 30px;
-    color:var(--white-800);
-    font-weight: 400;
-    justify-content: space-around;
 }
 .home h2 span{
     color:var(--main-color);
@@ -217,6 +212,12 @@
     font-size: 16px;
     margin-left: 40%;
     margin-right: 10%;
+}
+
+/** course-section **/
+.course-section{
+    background-color: var(--dark-800);
+    overflow: hidden;
 }
 
 
