@@ -1,0 +1,522 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* global style */
+:root{
+    --main-color:#24caac;
+    --color-1: #eaa023;
+    --color-2: #e91e63;
+    --dark-800: #24292d;
+    --dark-700: #2f363e;
+    --white-900: #ffffff;
+    --white-800:rgba(255,255,255,0.8);
+    --Shadow:0 0 15px rgba(0,0,0,0.2);
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+::before,
+::after{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-content-center{
+    align-content: center;
+}
+.h-100{
+    min-height: 100vh;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition:all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btn-1{
+    background-color: var(--main-color);
+    color: var(--white-900);
+}
+.btn-1:hover{
+    background-color: transparent;
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+@keyframes spin01{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes zoomOutIn01{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+}
+.sec-padding{
+    padding: 80px 0;
+}
+.section-title{
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+    color:var(--white-900);
+    font-weight: 600;
+}
+.section-title h2 span{
+    position: relative;
+}
+.section-title h2 span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 2px;
+    background-color: var(--main-color);
+    transform: skewY(-3deg);
+}
+p{
+    font-size: 16px;
+    color: var(--white-800);
+}
+.form-control{
+    height: 45px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    padding:0 15px;
+    border-radius:30px;
+    background-color: var(--dark-800);
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: capitalize;
+    color: var(--white-900);
+    font-weight: 300;
+    transition: all 0.5s ease;
+}
+.form-control::placeholder{
+    color: var(--white-800);
+}
+.form-control:focus{
+    border: var(--main-color);
+}
+/* header */
+.header{
+    background-color: var(--dark-800);
+    padding:10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid var(--dark-700);
+}
+.header .logo{
+    padding: 0 10px;
+}
+.header .logo a{
+    font-size: 22px;
+    color: var(--white-900);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.header .logo a span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+.header #nav-check{
+    position: absolute;
+    pointer-events: none;
+    opacity:0;
+}
+.header #nav-check:focus ~ .nav-toggler{
+    box-shadow:0 0 10px var(--main-color);
+}
+.header .nav-toggler{
+    height: 34px;
+    width: 44px;
+    border:1px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.header .nav-toggler span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: relative;
+}
+.header #nav-check:checked ~ .nav-toggler span{
+    background-color: transparent;
+}
+.header .nav-toggler span::before,
+.header .nav-toggler span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+}
+.header .nav-toggler span::before{
+    transform: translateY(-6px);
+}
+.header #nav-check:checked ~ .nav-toggler span::before{
+    transform: rotate(45deg);
+}
+.header .nav-toggler span::after{
+    transform: translateY(6px);
+}
+.header #nav-check:checked ~ .nav-toggler span::after{
+    transform: rotate(-45deg);
+}
+.header .nav{
+    padding: 0 15px;
+}
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .nav ul li a{
+    font-size: 16px;
+    color: var(--white-900);
+    display: block;
+    padding: 10px 0;
+    text-transform: capitalize;
+    transition:all 0.5s ease;
+}
+.header .nav ul li a:hover{
+    color: var(--main-color);
+}
+
+/* search */
+.searchBox {
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+ 
+}
+.searchBox:hover > .searchInput {
+    width: 250px;
+    padding: 0 6px;
+}
+ 
+.searchBox:hover > .searchButton {
+  background: #fff;
+  color : #2f3640;
+}
+.searchButton {
+    color: white;
+    float: right;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 50px;
+    width: 0px;
+}
+@media screen and (max-width: 620px) {
+    .searchBox{
+        position: absolute;
+        left: 76%;
+        width: 40%;
+    }
+    .searchBox:hover > .searchInput {
+        width: 100%;
+        padding: 0 6px;
+    }
+}
+
+/* header */
+.header{
+    background-color: var(--dark-800);
+    padding:10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    border-bottom: 1px solid var(--dark-700);
+}
+.header .logo{
+    padding: 0 10px;
+}
+.header .logo a{
+    font-size: 22px;
+    color: var(--white-900);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.header .logo a span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+.header #nav-check{
+    position: absolute;
+    pointer-events: none;
+    opacity:0;
+}
+.header #nav-check:focus ~ .nav-toggler{
+    box-shadow:0 0 10px var(--main-color);
+}
+.header .nav-toggler{
+    height: 34px;
+    width: 44px;
+    border:1px solid var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.header .nav-toggler span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: relative;
+}
+.header #nav-check:checked ~ .nav-toggler span{
+    background-color: transparent;
+}
+.header .nav-toggler span::before,
+.header .nav-toggler span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color);
+}
+.header .nav-toggler span::before{
+    transform: translateY(-6px);
+}
+.header #nav-check:checked ~ .nav-toggler span::before{
+    transform: rotate(45deg);
+}
+.header .nav-toggler span::after{
+    transform: translateY(6px);
+}
+.header #nav-check:checked ~ .nav-toggler span::after{
+    transform: rotate(-45deg);
+}
+.header .nav{
+    padding: 0 15px;
+}
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .nav ul li a{
+    font-size: 16px;
+    color: var(--white-900);
+    display: block;
+    padding: 10px 0;
+    text-transform: capitalize;
+    transition:all 0.5s ease;
+}
+.header .nav ul li a:hover{
+    color: var(--main-color);
+}
+
+/* Home Section */
+.home-section{
+    background-color: var(--dark-800);
+    overflow: hidden;
+    padding: 90px 0;
+}
+
+.section-title h2{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 25px;
+    color:var(--white-900);
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+.section-title h2 span{
+    position: relative;
+}
+.section-title h2 span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 2px;
+    background-color: var(--main-color);
+    transform: skewY(-3deg);
+}
+
+/* footer */
+.footer{
+    background-color: var(--dark-700);
+    padding: 60px 0;
+    color: var(--white-800);
+}
+.footer-item{
+    width: 25%;
+    padding:0 15px;
+}
+.footer-item h2{
+    color: var(--white-900);
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.footer-about .social-links{
+    margin-top: 15px;
+}
+.footer-about .social-links a{
+    display: inline-block;
+    border:1px solid transparent;
+    height: 35px;
+    width: 35px;
+    color: var(--main-color);
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+}
+.footer-about .social-links a:hover{
+    border-color: var(--main-color);
+}
+.footer-quick-links ul li a{
+    display: flex;
+    padding:8px 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: inherit;
+}
+.footer-quick-links ul li a:hover{
+    color: var(--main-color);
+}
+.footer-contact p{
+    margin:0 0 15px;
+    position: relative;
+    padding-left:30px;
+}
+.footer-contact p i{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.footer-newsletter .form-control{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-newsletter .btn{
+    height: 45px;
+    width: 100%;
+}
+
+
+
+/* responsive */
+
+@media(max-width:767px){
+    
+    .header .nav-toggler{
+        display: flex;
+        margin-right: 15px;
+    }
+    .header .nav{
+        width: 100%;
+        position: absolute;
+        background-color: var(--dark-700);
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header #nav-check:checked ~ .nav{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media(max-width:575px){
+    .footer-item{
+        width: 100%;
+    }
+}
