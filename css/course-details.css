@@ -400,31 +400,40 @@
         width: 100%;
     }
     .home h2{
-        font-size: 15px;
+        font-size: 20px;
+        text-align: center;
     }
     .player-container{
-        align-items: left;
+        align-items: center;
         display: block;
-        flex-direction: column;
         align-content: center;
         justify-content: space-around;
         width: 100%;
-        padding-left: 40px;
     }
     .video-player iframe{
         position: relative;
         display: block;
-        padding-right: 14rem;
-        margin-left: -15px;
-        max-width: 480px;
-        height: 270px;
+        width: 398px;
+        height: 225px;
+    }
+    .video-details {
+        width: 100%;
+        height: auto;
+    }
+    .teacher {
+        font-size: 15px;
+        margin-left: 30%;
     }
     .playlist{
         position: relative;
         margin-top: 40px;
+        width: 100%;
         align-items: center;
-        padding-left: 35px;
         justify-content: space-around;
+    }
+    .playlist .title h3{
+        text-align: center;
+        margin-left: 0;
     }
     .playlist table{
         width: 100%;        
