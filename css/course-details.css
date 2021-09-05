@@ -396,6 +396,9 @@
 }
 
 @media(max-width:575px){
+    .header{
+        flex-wrap: wrap;
+    }
     .home{
         width: 100%;
     }
