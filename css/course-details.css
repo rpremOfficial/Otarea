@@ -410,11 +410,18 @@
         justify-content: space-around;
         width: 100%;
     }
+    .pl{
+        overflow: hidden;
+    }
+    .pl iframe{
+        height: 100%;
+        width: 100%;
+    }
     .video-player iframe{
         position: relative;
         display: block;
-        width: 397.5px;
-        height: 225px;
+        /* width: 397.5px;
+        height: 225px; */
     }
     .video-details {
         width: 100%;
@@ -422,7 +429,14 @@
     }
     .teacher {
         font-size: 15px;
-        margin-left: 30%;
+        margin-left: 25%;
+    }
+    .button{
+        display: inline-block;
+        padding: 7px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: inherit;
     }
     .playlist{
         position: relative;
