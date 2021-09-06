@@ -47,16 +47,28 @@
             Students! </h2>
         </div>
         <div class="searchBox">
-          <form action="/search?">
+          <!-- <form action="/search?"> -->
             <div class="input-group">
-              <input class="searchInput" type="text" name="q" placeholder="Search Courses">
-            </div>
-            <button class="searchButton" type="submit">
+              <input class="searchInput" id="search" onkeyup="search()" type="text" name="q" placeholder="Search Courses">              
+            </div>            
+            <button class="searchButton" onclick="list()">
               <i class="material-icons">
                 search
               </i>
             </button>
-          </form>
+            <ul class="search-list">
+              <li><a id="searchable" href="pp-course-detail.html">Matric</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Inter</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Computer</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+              <li><a id="searchable" href="pp-course-detail.html">Competition</a></li>
+            </ul>
+          <!-- </form>           -->
         </div>
       </div>
     </div>
@@ -424,6 +436,7 @@
       "app_id": "ac396390"
     });
   </script>
+  <script type="text/javascript" src="js/Courses.js"></script>
   <!-- End of Customerly Live Chat Snippet Code -->
 
 </body>
