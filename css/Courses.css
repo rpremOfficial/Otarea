@@ -567,6 +567,7 @@ p{
         width: 100%;
     }
     .searchBox{
+        display: flex;
         position: absolute;
         left: 70%;
         width: 50%;
