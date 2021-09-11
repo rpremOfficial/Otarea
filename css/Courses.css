@@ -568,6 +568,7 @@ p{
     }
     .searchBox{
         display: flex;
+        flex-direction: row;
         position: absolute;
         left: 70%;
         width: 50%;
