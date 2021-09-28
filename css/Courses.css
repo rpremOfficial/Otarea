@@ -453,10 +453,10 @@ p{
     margin-bottom: 5px;
 }
 
-.footer-about .social-links{
+.social-links{
     margin-top: 15px;
 }
-.footer-about .social-links a{
+.social-links a{
     display: inline-block;
     border:1px solid transparent;
     height: 35px;
@@ -468,7 +468,7 @@ p{
     transition: all 0.5s ease;
     border-radius: 50%;
 }
-.footer-about .social-links a:hover{
+.social-links a:hover{
     border-color: var(--main-color);
 }
 .footer-quick-links ul li a{
