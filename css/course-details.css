@@ -22,6 +22,9 @@
     cursor: pointer;
     font-family: inherit;
 }
+p{
+    font-size: 15px;
+}
 /* header */
 .header{
     background-color: var(--dark-800);
