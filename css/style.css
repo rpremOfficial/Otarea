@@ -4,8 +4,9 @@
 /* global style */
 :root{
     --main-color:#24caac;
-    --color-1: #eaa023;
-    --color-2: #e91e63;
+    --color-1: #FFBA01;
+    --color-2: #F34F1C;
+    --color-3: #01A6F0;
     --dark-800: #24292d;
     --dark-700: #2f363e;
     --white-900: #ffffff;
@@ -58,7 +59,7 @@ img{
     align-content: center;
 }
 .h-100{
-    min-height: 100vh;
+    height: auto;
 }
 .btn{
     display: inline-block;
@@ -243,16 +244,26 @@ p{
 /* home section */
 .home-section{
     background-color: var(--dark-800);
-    overflow: hidden;
 }
+.home-section .box{
+    background-color: var(--dark-700);
+    border-radius: 15px;
+    box-shadow: var(--Shadow);
+
+}
+
 .home-section .h-100{
-    padding: 120px 0;
+    margin-top: 2%;
+    padding-top: 120px;
+    padding-bottom: 80px;
+
 }
 .home-text,
 .home-img{
     width: 50%;
-    padding: 0 15px;
+    padding: 15px 25px;
 }
+
 .home-text h1{
     font-size: 40px;
     color:var(--main-color);
@@ -334,7 +345,7 @@ p{
 .home-course-item:nth-child(4){
     bottom: -40px;
     right:calc(50% - 40px);
-    background-color: var(--dark-700);
+    background-color: var(--color-3);
 }
 /* why us section */
 .why-us-section{
@@ -455,8 +466,12 @@ p{
 .fun-facts-section{
     background-color: var(--dark-800);
 }
-.fun-facts-img img{
+.fun-facts-section .row{
     display: flex;
+    flex-direction: row;
+
+}
+.fun-facts-img img{
     justify-content: center;
     align-items: center;
 }
@@ -472,8 +487,8 @@ p{
 .fun-fact-item{
     width: calc(50% - 30px);
     margin: 30px 15px 30px;
-    padding: 25px;px;
     text-align: center;
+    padding: 10px;
     border-radius: 4px;
 }
 .fun-fact-item:nth-child(1){
@@ -718,6 +733,9 @@ a{
 }
 
 @media(max-width:767px){
+    .header .nav{
+        width: 100%;
+    }
     .contact-img, .contact-form,
     .fun-facts-img, .fun-facts-items,
     .home-text, .home-img{
@@ -746,10 +764,16 @@ a{
 }
 
 @media(max-width:575px){
+    .header .nav{
+        width: 100%;
+    }
     .fun-facts-item,
     .course-item,
     .why-us-item{
         width: calc(100% - 30px)
+    }
+    .home-img{
+        display: none;
     }
     .footer-item,
     .review-item{
