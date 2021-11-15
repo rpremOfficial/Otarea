@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "Otarea.in",
+  "Id": "b03618df-2da1-495f-85f8-ef1d61176eb8"
+}
