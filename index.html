@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script data-ad-client="ca-pub-2740152924211240" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <meta name="google-site-verification" content="cY53kcX6UrEsxXCB990VIuSeWuUXhFL1G87JqLfbHuQ" />
@@ -22,62 +27,97 @@
 </head>
 
 <body>
-
+  <script>alert("Site Under Maintainance\nHowever you can expolore by Clicking OK Button");</script>
   <!-- header start-->
   <header class="header">
-    <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="logo">
-          <img class="logo_img" src="assets/otarea logo icon with name.svg" alt="logo">
-          <a href="assets/otarea logo icon with name.svg">Otarea Educore</a>
+    <div class="container-r">
+      <div class="d-flex">
+        <div class="logo-box">
+          <img src="./docs/Otarea.in (1).png" alt="logo">
         </div>
-        <input type="checkbox" id="nav-check">
-        <label for="nav-check" class="nav-toggler">
-          <span></span>
-        </label>
         <nav class="nav">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="Courses.html">Courses</a></li>
-            <li><a href="https://www.otarea.tech" target="_blank">blog</a></li>
-            <li><a href="#reviews">Team</a></li>
-            <li><a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScIJpobgiX-r1xTCDzrxTnUv6mZkGVnPoJ5f5mqg_TMIbptYg/viewform?usp=sf_link"
-                target="_blank">Career</a>
-            </li>
-            <li><a href="#contact">Contact us</a></li>
+            <li><a target="_blank" href="https://otareaeducore.winuall.com">Educore</a></li>
+            <li><a href="indesign">Indesign</a></li>
+            <li><a target="_blank" href="https://otarea.tech" target="_blank">blog</a></li>
+            <li><a target="_blank" href="https://otareaeducore.winuall.com/store"><i class="fas fa-shopping-cart"></i>
+                Store</a></li>
           </ul>
         </nav>
       </div>
+      <div class="menu-box d-flex">
+        <div class="nav-right">
+          <div class="container-s">
+            <input type="text" id="searchBar" class="searchbar" placeholder="Search ...">
+            <a id="btnSearch" class="btn-search">
+              <i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="button">
+          <button href="#" class="btn">Get a Quote</button>
+        </div>
+      </div>
     </div>
   </header>
-  <!-- header end-->
 
-  <!-- home section start -->
-  <section class="home-section" id="home">
-    <div class="container">
-      <div class="box">
-        <div class="row h-100 align-items-center align-content-center">
-          <div class="home-text">
-            <h1>Creating Oppertunities for <span>Learners</span></h1>
-            <h2>Our mission is to empower the next generation by providing In demand Skills, Guidance and Support</h2>
-            <a  href="Courses.html" class="btn btn-1">Explore Now</a>
-          </div>
-          <div class="home-img">
-            <div class="home-img-inner">
-              <div class="home-course">
-                <div class="home-course-item">Acadmics</div>
-                <div class="home-course-item">competition</div>
-                <div class="home-course-item">Soft Skills</div>
-                <div class="home-course-item">Personality</div>
-              </div>
-              <img src="./img/Untitled design (7).png" alt="home-img">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="padding: 3%">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1">
+        <span></span>
+      </button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+        <span></span>
+      </button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2400">
+        <img src="./docs/3600167.png" class="d-block image w-100" alt="img-1">
+        <div class="hero">
+          <div class="left">
+            <div class="text">
+              <h4>We are</h4>
+              <h1>Creating Opportunities</h1>
+              <h3>for learners</h3>
             </div>
+            <div class="button">
+              <button href="https://otareaeducore.winuall.com" class="btn">Explore now</button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./docs/educore hero graphics.svg" alt="img-1">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2400">
+        <img src="./docs/3600167.png" class="d-block image w-100" alt="img-2">
+        <div class="hero">
+          <div class="left">
+            <div class="text">
+              <h4>We make your Work &</h4>
+              <h1>Brand Look different</h1>
+              <h3>from crowd</h3>
+            </div>
+            <div class="button" style="z-index: 900;">
+              <button href="https://indesign.otarea.in" class="btn">Visit Indesign</button>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./docs/educore hero graphics.svg" alt="img-1">
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+
+  </div>
   <!-- home section end -->
   <!-- why us section starts-->
   <section class="why-us-section sec-padding" id="why-us">
@@ -116,7 +156,7 @@
 
   <!--Course section starts-->
   <section class="course-section sec-padding" id="courses">
-    <div class="container">
+    <div class="container-old">
       <div class="row">
         <div class="section-title">
           <h2><span>Popular</span> Courses</h2>
@@ -222,7 +262,7 @@
 
   <!--fun facts section start-->
   <section class="fun-facts-section sec-padding">
-    <div class="container">
+    <div class="container-old">
       <div class="row">
         <div class="section-title">
           <h2>Our <span>Achievement</span></h2>
@@ -260,7 +300,7 @@
 
   <!-- reviews section start -->
   <section class="reviews-section sec-padding" id="reviews">
-    <div class="container">
+    <div class="container-old">
       <div class="row">
         <div class="section-title">
           <h2><span>Messages</span></h2>
@@ -270,8 +310,8 @@
         <div class="review-item">
           <img src="img/Profile Photo.png" alt="Student img">
           <p><i class="fas fa-quote-left"></i> We belive in a world where every child will get oppertunity to Learn and
-            Otarea is working to empower the next generation by providing right resources, guidance and Support with a wonderfull team <i
-              class="fas fa-quote-right"></i></p>
+            Otarea is working to empower the next generation by providing right resources, guidance and Support with a
+            wonderfull team <i class="fas fa-quote-right"></i></p>
           <h3>Prem Kumar</h3>
           <span>Founder, Otarea Tech.</span>
         </div>
@@ -282,7 +322,7 @@
 
   <!-- contact section start -->
   <section class="contact-section sec-padding" id="contact">
-    <div class="container">
+    <div class="container-old">
       <div class="row">
         <div class="section-title">
           <h2>Contact <span>US</span></h2>
@@ -321,7 +361,7 @@
 
   <!-- footer start -->
   <footer class="footer">
-    <div class="container">
+    <div class="container-old">
       <div class="row">
         <div class="footer-item footer-about">
           <h2>About US</h2>
