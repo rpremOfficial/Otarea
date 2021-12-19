@@ -37,7 +37,7 @@ ul {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 img {
   vertical-align: middle;
@@ -418,61 +418,18 @@ p {
   text-transform: capitalize;
   margin:0 0 10px;
 }
-/* course-section */
-.course-section-old {
+
+
+/* About Educore section start*/
+
+.about-educore{
   background-color: var(--dark-800);
+  margin: 0 0;
   padding-bottom: 50px;
 }
-.course-item-old {
-  width: calc(25% - 30px);
-  margin: 0 15px 30px;
-}
-.course-img-old {
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s ease;
-}
-.course-item-old:hover .course-img-old {
-  transform: scale(0.9);
-  box-shadow: var(--Shadow);
-}
-.course-img-old img {
-  width: 100%;
-}
-.course-img-old .course-price-old {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: var(--dark-800);
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-.course-info-old {
-  padding: 15px 0;
-}
-.course-info-old ul {
-  display: flex;
-  justify-content: space-between;
-}
-.course-info-old ul li {
-  color: var(--white-800);
-  text-transform: capitalize;
-  font-size: 14px;
-}
-.course-info-old ul li .fa-star {
-  color: var(--color-1);
-}
-.course-info-old h3 {
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: var(--white-900);
-  margin: 10px 0 0;
-}
+
+/* About Educore section end*/
+
 
 /*fun fact section starts */
 
@@ -513,9 +470,9 @@ p {
 .fun-fact-item-old:nth-child(3) {
   background-color: var(--main-color);
 }
-/* .fun-fact-item-old:nth-child(4) {
+.fun-fact-item-old:nth-child(4) {
   background-color: var(--dark-700);
-} */
+}
 .fun-fact-item-old h3 {
   font-size: 35px;
   color: var(--white-900);
@@ -542,12 +499,23 @@ p {
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease;
+  text-align: left;
+}
+.app-container-new{
+  background-color: var(--dark-700);
+  border-radius: 20px;
 }
 .app-img img {
   width: 200px;
 }
-.app-info h3,.app-info p{
+.app-info h3{
   color: var(--white-900);
+  text-align: left;
+}
+.app-info p{
+  color: var(--white-800);
+  text-align: left;
+  padding-top: 20px;
 }
 .app-item:hover .app-img {
   transform: scale(0.9);
@@ -556,8 +524,12 @@ p {
 .discription-img {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 15px 5px;
+}
+.app-download-btn a img{
+  max-width: 240px;
+  padding-top: 30px;
 }
 
 /* contact-section */
