@@ -402,13 +402,13 @@ p {
 .why-us-item-old:nth-child(3){
   background-color: var(--main-color);
 }
-.why-us-item-old .icon{
+.why-us-item-old .icon-old{
   font-size: 30px;
   color:var(--main-color);
   margin:0 0 10px;
   transform: all 0.5s ease;
 }
-.why-us-item-old:hover .icon{
+.why-us-item-old:hover .icon-old{
   color: var(--white-900);
 }
 .why-us-item-old h3{
