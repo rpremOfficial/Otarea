@@ -427,8 +427,79 @@ p {
   margin: 0 0;
   padding-bottom: 50px;
 }
+.about-discription{
+  padding-bottom: 40px;
+}
+.first i:before {
+  color: var(--color-1) !important;
+}
+.first h5{
+  color: var(--color-1);
+}
+.second i:before {
+  color: var(--color-2) !important;
+}
+.second h5{
+  color: var(--color-2);
+}
+.third i:before {
+  color: var(--color-3) !important;
+}
+.third h5{
+  color: var(--color-3);
+}
 
 /* About Educore section end*/
+
+/* app section */
+.app-section {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background-color: transparent;
+  padding-bottom: 50px;
+  background-color: var(--dark-800);
+}
+.app-info {
+  width: calc(50% - 10px) !important;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  text-align: left;
+}
+.app-container-new{
+  background-color: var(--dark-700);
+  border-radius: 6px;
+  box-shadow: var(--Shadow);
+}
+.app-img img {
+  width: 200px;
+}
+.app-info h3{
+  color: var(--white-900);
+  text-align: left;
+  padding-top: 5%;
+}
+.app-info p{
+  color: var(--white-800);
+  text-align: left;
+  padding-top: 20px;
+}
+.app-item:hover .app-img {
+  transform: scale(0.9);
+  box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.25);
+}
+.discription-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 5px;
+}
+.app-download-btn a img{
+  max-width: 240px;
+  padding-top: 30px;
+}
 
 
 /*fun fact section starts */
@@ -436,17 +507,17 @@ p {
 .fun-facts-section-old {
   background-color: var(--dark-800);
 }
-/* .fun-facts-section-old .row-old {
+.fun-facts-section-old .row-old {
   display: flex;
   flex-direction: row;
   width: 100%;
-} */
+}
 .fun-facts-img-old img {
   justify-content: center;
   align-items: center;
 }
 .fun-facts-img-old img {
-  max-width: 420px;
+  max-width: 90%;
   width: 100%;
   animation: zoomOutIn01 7s linear infinite;
 }
@@ -483,56 +554,10 @@ p {
   text-transform: uppercase;
   color: var(--white-900);
 }
-
-/* app section */
-.app-section {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  background-color: transparent;
-  padding-bottom: 50px;
-  background-color: var(--dark-800);
-}
-.app-info {
-  width: calc(50% - 10px) !important;
-  justify-content: center;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s ease;
-  text-align: left;
-}
-.app-container-new{
-  background-color: var(--dark-700);
-  border-radius: 20px;
-  box-shadow: var(--Shadow);
-}
-.app-img img {
-  width: 200px;
-}
-.app-info h3{
-  color: var(--white-900);
-  text-align: left;
-  padding-top: 5%;
-}
-.app-info p{
-  color: var(--white-800);
-  text-align: left;
-  padding-top: 20px;
-}
-.app-item:hover .app-img {
-  transform: scale(0.9);
-  box-shadow: 0px 2px 2px rgba(128, 128, 128, 0.25);
-}
-.discription-img {
-  display: flex;
-  flex-direction: row;
+.fun-facts-section-old .row-old{
   justify-content: space-evenly;
-  padding: 15px 5px;
 }
-.app-download-btn a img{
-  max-width: 240px;
-  padding-top: 30px;
-}
+
 
 /* contact-section */
 .contact-section-old {
@@ -573,12 +598,13 @@ p {
   width: 100%;
   margin-bottom: 5px;
 }
-h4 {
+h5 {
   font-family: sans-serif;
   color: var(--white-800);
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
+  font-weight: lighter;
 }
 a {
   margin-top: 2px;
