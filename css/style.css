@@ -504,6 +504,7 @@ p {
 .app-container-new{
   background-color: var(--dark-700);
   border-radius: 20px;
+  box-shadow: var(--Shadow);
 }
 .app-img img {
   width: 200px;
@@ -511,6 +512,7 @@ p {
 .app-info h3{
   color: var(--white-900);
   text-align: left;
+  padding-top: 5%;
 }
 .app-info p{
   color: var(--white-800);
