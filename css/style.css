@@ -22,6 +22,7 @@ body {
   margin: 0;
   width: 100%;
   background-color: var(--dark-800);
+  overflow-x: hidden;
   /* background-image: url("../docs/explosion-colored-powder-white-background.jpg");
   background-image: no-repeat; */
 }
@@ -441,10 +442,10 @@ p {
 .about-discription{
   padding-bottom: 40px;
 }
-.col-md-4 i:before {
+.col-md-4-old i:before {
   color: var(--main-color) !important;
 }
-.col-md-4 h5{
+.col-md-4-old h5{
   color: var(--white-900);
   font-family: sans-serif;
   font-style: normal;
@@ -796,13 +797,15 @@ a {
     font-size: 12px;
     padding: 0 5%;
   }
-  .col-md-4{
+  .col-md-4-old{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
+    padding-right: -10px;
   }
-  .col-md-4 p{
+  .col-md-4-old p{
     display: none;
   }
   .app-info h3{
