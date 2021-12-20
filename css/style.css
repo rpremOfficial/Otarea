@@ -337,7 +337,7 @@ p {
   position: relative;
   left: 5%;
   width: 50%;
-  padding: auto;
+  /* padding: auto; */
   text-align: left;
 }
 .left h4 {
@@ -722,6 +722,8 @@ a {
   }
   .hero{
     flex-direction: column;
+    top: 45%;
+    left: 45%;
   }
   .hero .left, .hero .right{
     width: 100%;
@@ -730,6 +732,9 @@ a {
   .hero .left {
     padding: auto;
     text-align: center;
+  }
+  .hero .right{
+    margin-left: 5%;
   }
   .left h4 {
     font-size: 0.75em;
@@ -819,5 +824,8 @@ a {
   .footer-item-old,
   .review-item-old {
     width: 100%;
+  }
+  .sec-padding-old {
+    padding: 40px 0;
   }
 }
