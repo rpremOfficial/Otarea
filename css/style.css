@@ -291,8 +291,8 @@ p {
   width: 60px !important;
   height: 6px;
   border: none;
-  border-radius: 15px !important;
-  background-color: rgb(172, 172, 172) !important;
+  border-radius: 40px !important;
+  background-color: var(--white-800) !important;
 }
 
 .carousel-indicators [data-bs-target] span {
@@ -699,47 +699,6 @@ a {
 /* responsive */
 
 @media (max-width: 991px) {
-  .header .nav-toggler {
-    display: flex;
-    margin-right: 15px;
-  }
-  .header .logo {
-    width: 40%;
-  }
-  .header .nav {
-    width: 100%;
-    position: absolute;
-    /* background-color: var(--dark-700); */
-    top: 100%;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .header #nav-check:checked ~ .nav {
-    visibility: visible;
-    opacity: 1;
-  }
-  .header .nav ul li {
-    margin: 0;
-    display: block;
-  }
-  .home-text-old h1 {
-    font-size: 40px;
-  }
-  .home-text-old h1 span::after {
-    bottom: 10px;
-  }
-  .home-text-old h2 {
-    font-size: 20px;
-  }
-  .home-text-old,
-  .home-img-old {
-    width: 100%;
-  }
-  .home-img-old {
-    margin-top: 60px;
-  }
-  .course-item-old,
   .why-us-item-old {
     width: calc(50% - 30px);
   }
@@ -752,33 +711,45 @@ a {
 }
 
 @media (max-width: 767px) {
-  .header .nav {
+  .carousel{
+  margin-top: 15%;
+  }
+  .carousel-inner{
+    height: 420px;
+  }
+  .header .nav, .nav-right, .quote{
+    display: none;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero .left, .hero .right{
     width: 100%;
+    height: 50% !important;
   }
-  .header .logo {
-    width: 50%;
+  .hero .left {
+    padding: auto;
+    text-align: center;
   }
+  .left h4 {
+    font-size: 0.75em;
+  }
+  .left h1 {
+    font-size: 1.7em;
+  }
+  .left h3 {
+    font-size: 1.25em;
+  }
+  
   .contact-img-old,
   .contact-form-old,
   .fun-facts-img-old,
-  .fun-facts-items-old,
-  .home-text-old,
-  .home-img-old {
+  .fun-facts-items-old{
     width: 100%;
   }
   .contact-form-old,
   .fun-fact-items-old {
     margin-top: 50px;
-  }
-  .home-text-old h1 {
-    font-size: 30px;
-  }
-  .home-text-old h1 span::after {
-    bottom: 6px;
-  }
-  .home-text-old h2 {
-    padding-top: 10px;
-    font-size: 16px;
   }
   .section-title-old h2 {
     font-size: 30px;
@@ -789,25 +760,64 @@ a {
 }
 
 @media (max-width: 575px) {
-  .header .nav {
-    width: 100%;
+  .row-old{
+    flex-direction: row;
   }
-  .header .logo {
-    width: 75%;
+  .why-us-item-old{
+    width: calc(100% - 30px);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
-  .fun-facts-item-old,
-  .course-item-old,
-  .why-us-item-old {
+  .why-us-item-old p{
+    display: none;
+  }
+  .why-us-item-old .icon-old{
+    font-size: 20px;
+    margin: 0;
+  }
+  .why-us-item-old h3{
+    font-size: 14px;
+    margin: 0;
+  }
+  .about-discription{
+    font-size: 12px;
+    padding: 0 5%;
+  }
+  .col-md-4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .col-md-4 p{
+    display: none;
+  }
+  .app-info h3{
+    font-size: 20px;
+  }
+  .app-info p{
+    font-size: 12px;
+  }
+  .app-download-btn .qr-code{
+    display: none;
+  }
+  .app-container-new{
+    margin:0 3%;
+  }
+  .app-img img{
+    width: 120px;
+  }
+  .fun-facts-item-old {
     width: calc(100% - 30px);
   }
-  .home-img-old {
-    display: none;
+  .contact-form-old a{
+    font-size: 14px;
   }
   .footer-item-old,
   .review-item-old {
     width: 100%;
-  }
-  .review-item-old {
-    text-align: center;
   }
 }
