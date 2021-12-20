@@ -281,6 +281,9 @@ p {
 .fa-search::before{
   color: var(--white-900);
 }
+.mobile-nav{
+  display: none;
+}
 /* coursoul section */
 
 .carousel {
@@ -835,5 +838,17 @@ a {
   }
   .sec-padding-old {
     padding: 40px 0;
+  }
+
+  .logo-box{
+    margin-top: 10px;
+  }
+  .logo-box img {
+    height: 64px;
+    width: 154px;
+  }
+  .mobile-nav{
+    display: inline-block;
+    margin-top: 8px;
   }
 }
