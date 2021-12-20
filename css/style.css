@@ -240,7 +240,7 @@ p {
   transition: 0.3s ease-in-out;
 }
 .searchbar::placeholder {
-  color: var(--white-900);
+  color: var(--white-800);
   font-family: sans-serif;
   font-size: 1em;
   font-weight: lighter;
@@ -272,6 +272,13 @@ p {
 .fa-shopping-cart {
   color: var(--white-900);
 }
+.fa-search{
+  padding-top: 7px;
+}
+.fa-search::before{
+  color: var(--white-900);
+}
+/* coursoul section */
 
 .carousel {
   position: relative;
@@ -300,8 +307,8 @@ p {
 
 .carousel-inner {
   border: 1px solid none;
-  border-radius: 20px !important;
-  height: 600px;
+  border-radius: 6px !important;
+  height: 560px;
 }
 .image {
   /* opacity: 1; */
@@ -333,24 +340,26 @@ p {
   padding: auto;
   text-align: left;
 }
+.left h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: var(--white-800);
+}
 .left h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3em;
   font-weight: bold;
-  color: rgb(51, 51, 51);
+  color: var(--main-color)
 }
 .left h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
   font-weight: bold;
-  color: rgb(3, 110, 182);
+  color: var(--white-900);
 }
-.left h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
-  font-weight: bold;
-  color: rgb(3, 110, 182);
-}
+
 .hero .right {
   position: relative;
   right: 0;
@@ -358,7 +367,7 @@ p {
   width: 50%;
 }
 .right img {
-  padding: 10%;
+  padding: 15%;
 }
 /* why us section */
 .why-us-section-old{
@@ -488,7 +497,9 @@ p {
 }
 .app-download-btn a img{
   max-width: 240px;
-  padding-top: 30px;
+  max-height: 120px;
+  margin-top: 20px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 
