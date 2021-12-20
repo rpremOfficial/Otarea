@@ -420,7 +420,7 @@ p {
 }
 
 
-/* About Educore section start*/
+/* About Indesign section start*/
 
 .about-educore{
   background-color: var(--dark-800);
@@ -430,23 +430,13 @@ p {
 .about-discription{
   padding-bottom: 40px;
 }
-.first i:before {
-  color: var(--color-1) !important;
+.col-md-4 i:before {
+  color: var(--main-color) !important;
 }
-.first h5{
-  color: var(--color-1);
-}
-.second i:before {
-  color: var(--color-2) !important;
-}
-.second h5{
-  color: var(--color-2);
-}
-.third i:before {
-  color: var(--color-3) !important;
-}
-.third h5{
-  color: var(--color-3);
+.col-md-4 h5{
+  color: var(--white-900);
+  font-family: sans-serif;
+  font-style: normal;
 }
 
 /* About Educore section end*/
