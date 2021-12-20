@@ -679,6 +679,23 @@ a {
   width: 100%;
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: var(--Shadow);
+  background-color: var(--dark-700);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 40px;
+}
+
 /* responsive */
 
 @media (max-width: 991px) {
