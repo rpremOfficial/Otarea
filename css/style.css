@@ -816,6 +816,7 @@ a {
   }
   .app-info p{
     font-size: 12px;
+    padding: 0;
   }
   .app-download-btn .qr-code{
     display: none;
@@ -825,6 +826,9 @@ a {
   }
   .app-img img{
     width: 120px;
+  }
+  .app-download-btn a img {
+    margin-top: 0px;
   }
   .fun-facts-item-old {
     width: calc(100% - 30px);
@@ -842,6 +846,7 @@ a {
 
   .logo-box{
     margin-top: 10px;
+    margin-left: 2px;
   }
   .logo-box img {
     height: 64px;
@@ -850,5 +855,6 @@ a {
   .mobile-nav{
     display: inline-block;
     margin-top: 8px;
+    margin-right: -4px;
   }
 }
