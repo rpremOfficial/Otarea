@@ -433,6 +433,9 @@ p {
   text-transform: capitalize;
   margin:0 0 10px;
 }
+.btn-old .btn-1-old{
+  z-index: 99;
+}
 
 
 /* About Indesign section start*/
