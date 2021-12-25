@@ -313,7 +313,7 @@ p {
 
 .carousel-inner {
   border: 1px solid none;
-  border-radius: 6px !important;
+  border-radius: 20px !important;
   height: 560px;
 }
 .image {
@@ -464,7 +464,61 @@ p {
   width: 80%;
 }
 
+
 /* About Educore section end*/
+
+/* course-section */
+.course-item-old{
+  width: calc(25% - 30px);
+  margin:0 15px 30px;
+}
+.course-img-old{
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  margin-top: 15%;
+}
+.course-item-old:hover .course-img-old{
+  transform: scale(0.9);
+  box-shadow: var(--Shadow);
+}
+.course-img-old img{
+  width: 100%;
+}
+.course-img-old .course-price{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--dark-800);
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.course-info-old{
+  padding: 15px 0;
+}
+.course-info-old ul{
+  display: flex;
+  justify-content: space-between;
+}
+.course-info-old ul li{
+  color: var(--white-800);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.course-info-old ul li .fa-star{
+  color: var(--color-1);
+}
+.course-info-old h3{
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--white-900);
+  margin: 10px 0 0;
+}
 
 /* app section */
 .app-section {
@@ -472,6 +526,7 @@ p {
   margin-right: 0 !important;
   background-color: transparent;
   padding-bottom: 50px;
+  padding-top: 0 !important;
   background-color: var(--dark-800);
 }
 .app-info {
