@@ -1,0 +1,21 @@
+$colors: (
+    primary: #023047,
+    primary-light: lighten(#023047, 40%),
+    primary-dark: darken(#023047, 40%),
+    accent: #ffb703
+);
+
+$padding: 15px;
+$borders: 15px;
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
