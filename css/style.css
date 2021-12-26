@@ -892,7 +892,20 @@ a {
     width: 100%;
     padding-right: -10px;
   }
+  .row .portfolio-item{
+    width: calc(50%);
+  }
   .col-md-4-old p{
+    display: none;
+  }
+  .course-item-old{
+    width: calc(50% - 20px);
+    margin:0 10px 20px;
+  }
+  .course-info-old h3{
+    font-size: 14px;
+  }
+  .course-info-old ul li .fa-star{
     display: none;
   }
   .app-info h3{
@@ -925,7 +938,7 @@ a {
     width: 100%;
   }
   .sec-padding-old {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 
   .logo-box{
@@ -941,4 +954,5 @@ a {
     margin-top: 8px;
     margin-right: -4px;
   }
+
 }
