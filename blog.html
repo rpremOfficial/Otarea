@@ -13,10 +13,13 @@
 
 <body>
     <header>
+        <div class="background-img">
+            <img src="docs\explosion-colored-powder-white-background.png">
+        </div>
         <div class="container">
             <div class="header-left">
                 <div class="logo">
-                    <img src="./docs/Otarea.in (1).png" alt="logo">
+                    <img src="./docs/Otarea.in (3).png" alt="logo">
                 </div>
                 <div class="text">
                     <h2> | Blog</h2>
@@ -24,10 +27,15 @@
             </div>
             <div class="header-right">
                 <div class="nav">
-                    <ul>
-                        <li><a href="#"><i class="fas fa-archive"></i> Archive</a></li>
-                        <li><a href="#"><i class="fas fa-shopping-cart"></i> Store</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-caret-down">Archive</i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Jan 2022</a>
+                            <a href="#">Jan-Dec 2021</a>
+                            <a href="#">Before 2021</a>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> Store</a>
                 </div>
                 <div class="button">
                     <button href="#" class="btn btn-1">Get a Quote</button>
@@ -35,6 +43,24 @@
             </div>
         </div>
     </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-left">
+                <div class="heading">
+                    <h1>Let’s Explore<br>
+                        New Possibilities...</h1>
+                </div>
+                <div class="search-div">
+                    <button class="search-btn"> <input type="text"></button>
+                    <button type="button" href="#" class="search-btn-2">Search</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
