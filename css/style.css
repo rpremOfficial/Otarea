@@ -234,7 +234,7 @@ p {
   background-color: transparent;
   color: var(--white-800);
   height: 30px !important;
-  width: 120px !important;
+  width: 200px !important;
   border: none;
   font-family: sans-serif;
   font-size: 1em;
@@ -249,7 +249,7 @@ p {
   font-weight: lighter;
 }
 .searchbar:focus {
-  width: 400px !important;
+  width: 360px !important;
   border-bottom: rgb(31, 197, 147) solid 1px;
   transition: 0.3s ease;
   outline: none;
