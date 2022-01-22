@@ -792,6 +792,9 @@ a {
 /* responsive */
 
 @media (max-width: 991px) {
+  .header .nav, .nav-right, .quote{
+    display: none;
+  }
   .why-us-item-old {
     width: calc(50% - 30px);
   }
@@ -801,6 +804,11 @@ a {
   .footer-item-old {
     margin-bottom: 30px;
   }
+  .mobile-nav{
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: -4px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -809,9 +817,6 @@ a {
   }
   .carousel-inner{
     height: 480px;
-  }
-  .header .nav, .nav-right, .quote{
-    display: none;
   }
   .hero{
     flex-direction: column;
@@ -949,10 +954,6 @@ a {
     height: 64px;
     width: 154px;
   }
-  .mobile-nav{
-    display: inline-block;
-    margin-top: 8px;
-    margin-right: -4px;
-  }
+  
 
 }
