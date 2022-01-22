@@ -809,6 +809,22 @@ a {
     margin-top: 8px;
     margin-right: -4px;
   }
+  .collapse .bg-light {
+    background-color: var(--main-color) !important;
+    border-radius: 16px;
+    box-shadow: var(--Shadow);
+}
+ .p-4 {
+    padding: 1.5rem !important;
+    text-align: right !important;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    background-color: var(--main-color);
+    box-shadow: 0 0 0 0.25rem;
+    position: absolute;
+    right: 15%;
+    top: 10%;
 }
 
 @media (max-width: 767px) {
